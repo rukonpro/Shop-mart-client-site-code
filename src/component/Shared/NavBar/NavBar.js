@@ -35,16 +35,7 @@ const NavBar = () => {
                 <Button sx={{ color: 'black' }}>Home</Button>
 
               </NavLink>
-              <NavLink
-                style={{
-                  color: "black",
-                  textDecoration: "none",
-                  margin: "10px",
-                }}
-                to="/about"
-              >
-                <Button sx={{ color: 'black' }}>About Us</Button>
-              </NavLink>
+              
 
               <NavLink
                 style={{
@@ -68,9 +59,9 @@ const NavBar = () => {
                         margin: "10px",
                       }}
                     >
-                      <Button sx={{ color: 'black' }}>
-                        <Button sx={{ color: 'black' }}>About</Button>
-                      </Button>
+                      
+                        About
+                      
                     </NavLink>
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/contact">
@@ -82,7 +73,7 @@ const NavBar = () => {
                       }}
                       to="/contact"
                     >
-                      <Button sx={{ color: 'black' }}> Contact us</Button>
+                     Contact us
 
                     </NavLink>
                   </NavDropdown.Item>
@@ -95,7 +86,7 @@ const NavBar = () => {
                       }}
                       to="/blog"
                     >
-                      <Button sx={{ color: 'black' }}>Blog</Button>
+                      Blog
 
                     </NavLink>
                   </NavDropdown.Item>
@@ -108,8 +99,8 @@ const NavBar = () => {
                       }}
                       to="/portfolio"
                     >
-                      <Button sx={{ color: 'black' }}>Portfolio</Button>
-                    </NavLink>
+                      Portfolio
+                      </NavLink>
                   </NavDropdown.Item>
                   <NavDropdown.Item href="/error">
                     <NavLink
@@ -135,29 +126,19 @@ const NavBar = () => {
               >
                 <Button sx={{ color: 'black' }}>Dashboard</Button>
               </NavLink>
-
+              <NavLink
+                style={{
+                  color: "black",
+                  textDecoration: "none",
+                  margin: "10px",
+                }}
+                to="/about"
+              >
+                <Button sx={{ color: 'black' }}>About Us</Button>
+              </NavLink>
             </Nav>
             <Nav>
-              <NavLink
-                className="mt-2"
-                style={{ color: "black", marginRight: "20px" }}
-                to="/login"
-              >
-                <i className="fas fa-search"></i>
-              </NavLink>
-
-              {/* login */}
-
-
-              <NavLink
-                className="mt-2"
-                style={{ color: "black", marginRight: "20px" }}
-                to="/"
-              >
-                <i className="fab fa-opencart"></i>
-              </NavLink>
-
-
+              
               <NavLink
                 className="mt-2"
                 style={{ color: "black", marginRight: "20px" }}

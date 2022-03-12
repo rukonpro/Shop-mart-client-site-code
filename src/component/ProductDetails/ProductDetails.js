@@ -7,20 +7,6 @@ import "./ProductDetails.css";
 const ProductDetails = () => {
   let { id } = useParams();
   const [productDetail, setProductDetail] = useState({});
-  const [quantity, setQuantity] = useState(1)
-
-
-  const handleIncrement = () => {
-    if (quantity < 20) {
-      setQuantity(prevCount => prevCount + 1)
-    }
-  }
-
-  const handleDecrement = () => {
-    if (quantity > 1) {
-      setQuantity(prevCount => prevCount - 1)
-    }
-  }
 
   useEffect(() => {
     fetch(`https://mighty-reef-87460.herokuapp.com/homeProducts/${id}`)
@@ -48,66 +34,13 @@ const ProductDetails = () => {
           <span>No reviews</span>
           <hr />
           <p>{productDetail.detailS}</p>
-          <div className="d-flex full-width">
-            <div className="mt-2">
-              <div className="d-flex">
-                <button
-                  onClick={handleDecrement}
-                  type="button"
-                  className="btn btn-danger"
-                  data-id=""
-                  data-qty="0"
-                >
-                  <span className="fa fa-minus"></span>
-                </button>
-                <input
-                  style={{ width: "50px", textAlign: "center" }}
-                  type="text"
-                  className="js-qty__num"
-                  value={quantity}
-                  min="1"
-                  data-id=""
-                  aria-label="quantity"
-                  pattern="[0-9]*"
-                  name="quantity"
-                  id="Quantity"
-                />
-
-                <div>
-
-                  <button
-                    onClick={handleIncrement}
-                    type="button"
-                    className="btn btn-success"
-                    data-id=""
-                    data-qty="11"
-                  >
-                    <span className="fa fa-plus"></span>
-                  </button>
-
-
-                </div>
-              </div>
-            </div>
-            <button
-              type="submit"
-              className="ms-3  addToCart"
-              value="Add to Cart"
-              style={{ opacity: 1 }}
-            >
-              ADD TO CART
-            </button>
-          </div>
+      
           <Link to={`/order/${productDetail._id}`}>
-            {" "}
+           
             <button className="btn3 mt-5">BUY IT NOW</button>
           </Link>
           <br />
-          {productDetail.categories ? (
-            <small>Categories: {productDetail.categories}</small>
-          ) : (
-            <small>Shop Products</small>
-          )}
+         
         </div>
         {/* col-3 */}
         <div className="col-lg-3 col-sm-12 col-xs-12">

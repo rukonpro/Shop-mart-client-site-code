@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -20,9 +21,7 @@ const Footer = () => {
                                     <img src="https://lusion.arrowtheme.com/wp-content/uploads/2020/04/logo-default-89x30.png.webp" alt="" />
                                 </h6>
                                 <p>
-                                    Here you can use rows and columns to organize your footer
-                                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
+                                    We have worked hand-in-hand with a large scale of customers all over the world accomplishing a wide range of industries and services for 10+ years. Each of our work represents our dedication to the quality.
                                 </p>
                             </div>
                             {/* <!-- Grid column --> */}
@@ -37,13 +36,13 @@ const Footer = () => {
 
                                 </p>
                                 <p>
-                                    <a href="http://" className="text-white">Contact Us</a>
+                                    <Link to="/contact" className="text-white">Contact Us</Link>
                                 </p>
                                 <p>
-                                    <a href="http://" className="text-white">Feedback</a>
+                                    <Link to="/about" className="text-white">About</Link>
                                 </p>
                                 <p>
-                                    <a href="http://" className="text-white">Unsubscribe</a>
+                                    <Link to="/blog" className="text-white">Blog</Link>
                                 </p>
                             </div>
                             {/* <!-- Grid column --> */}
@@ -75,10 +74,20 @@ const Footer = () => {
                             {/* <!-- Grid column --> */}
                             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                                 <h6 className="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                                <p><i className="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                                <p><i className="fas fa-envelope mr-3"></i> info@gmail.com</p>
-                                <p><i className="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                                <p><i className="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                                <p><i className="fas fa-home mr-3"></i>Sunamganj,Sylhet.</p>
+                                <p><i className="fas fa-envelope mr-3"></i>
+                                
+                                <a style={{ textDecoration:'none',color:'white'}} href="mailto:shop-mart@gmail.com"> shop-mart@gmail.com</a>
+                                
+                                </p>
+                                <p><i className="fas fa-phone mr-3"></i>
+                                
+                                <a style={{ textDecoration:'none',color:'white'}} href="tel:+8801765459224" target="_blank" rel="noopener noreferrer"> +8801765459224</a>
+                                
+                                </p>
+                                <p><i className="fas fa-print mr-3"></i>
+                                <a style={{ textDecoration:'none',color:'white'}} href="tel:+ 01 234 567 89"> + 01 234 567 89</a>
+                                </p>
                             </div>
                             {/* <!-- Grid column --> */}
                         </div>
@@ -95,10 +104,8 @@ const Footer = () => {
                             <div className="col-md-7 col-lg-8 text-center text-md-start">
                                 {/* <!-- Copyright --> */}
                                 <div className="p-3">
-                                    © 2022 Copyright:
-                                    <a className="text-white" href="https://mdbootstrap.com/"
-                                    >lusion.com</a
-                                    >
+                                    © 2022 Copyright: Shop Mart
+
                                 </div>
                                 {/* <!-- Copyright --> */}
                             </div>

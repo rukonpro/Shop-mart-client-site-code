@@ -64,6 +64,7 @@ const Order = () => {
         <h3 className="text-light pt-5">ORDER NOW</h3>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
+          disabled
             placeholder="name"
             style={{
               color: "white",
@@ -85,6 +86,7 @@ const Order = () => {
           <br />
           {/* title */}
           <input
+          disabled
             placeholder="title"
             style={{
               color: "white",
@@ -96,6 +98,7 @@ const Order = () => {
           <br />
           {/* description */}
           <input
+          disabled
             placeholder="Description"
             style={{
               color: "white",
@@ -105,6 +108,7 @@ const Order = () => {
             {...register("detailS", { required: true })}
           />{" "}
           <input
+          disabled
             placeholder="Price"
             style={{
               color: "white",

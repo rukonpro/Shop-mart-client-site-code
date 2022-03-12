@@ -83,7 +83,7 @@ const About = () => {
               <div className="card-image profile-img--two">
                 <img
                   className=""
-                  src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/245071675_1014347032470719_5653917000467582376_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeG0e9gW59hKXHX8hCjudWzOJPR6kCKKjTAk9HqQIoqNMDUmUP6M1EVd_PvzDQd-B2JIrjjlPa4pI9-QgNTqwF08&_nc_ohc=4G43-T9W3PYAX9ZQo0Z&_nc_ht=scontent.fdac24-1.fna&oh=00_AT9x3IoS2xowvYjj9Cn7RXq6WWcMDePJH1VSwm5GP2NiNQ&oe=61D79726"
+                  src="https://i.ibb.co/gb1WtxG/Rukon-Pofile-Pic-2.png"
                   alt="profile two"
                 />
               </div>
@@ -167,7 +167,7 @@ const About = () => {
               <div className="card-image profile-img--two">
                 <img
                   className=" img-fluid"
-                  src="https://scontent.fdac24-1.fna.fbcdn.net/v/t39.30808-6/241860524_2930063633923705_3131907625071003352_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeHZoK6C4E8EFlqRTfPybk2-Ev0iUE3NI5gS_SJQTc0jmFcKdz3upHaBahZ8l7FC4RpvsguRwdjLReVAnA6LpUnR&_nc_ohc=8V8tq1-EJyYAX-33OCJ&tn=b2cWXy7_fXbduTma&_nc_ht=scontent.fdac24-1.fna&oh=00_AT-ESrwS-4H-oBOjKgc6L1n2tKlrg1GknKFQtwcN88yIdA&oe=61D7D6AA"
+                  src="https://scontent.fdac24-1.fna.fbcdn.net/v/t1.6435-9/145811361_2778167212446682_8786368061800423034_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeFyMogxDNJA6O8nU-0gaEoyeVqWNo9daZB5WpY2j11pkI8DvAPlbKuIRV6Nr7va6x1vmPn0D0RZXctPLDY2lZtv&_nc_ohc=8G22u8XAJ0AAX_7mhLX&_nc_ht=scontent.fdac24-1.fna&oh=00_AT-GKP0b_HNdFe-kr45wwn-YodtP8kbt7TJUiiuNoD-9Rg&oe=62513988"
                   alt="profile two"
                 />
               </div>
