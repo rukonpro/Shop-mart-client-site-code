@@ -15,7 +15,7 @@ const Order = () => {
   const location = useNavigate();
   const redirect_uri = location?.state?.from || "/";
   useEffect(() => {
-    fetch(`https://mighty-reef-87460.herokuapp.com/homeProducts/${id}`)
+    fetch(`https://shop-mart-server.onrender.com/homeProducts/${id}`)
       .then((res) => res.json())
       .then((data) => setProductDetail(data));
   }, [id]);
@@ -25,7 +25,7 @@ const Order = () => {
     setIsUpdated(true);
     data.userId = user.uid;
     axios
-      .post("https://mighty-reef-87460.herokuapp.com/addToCartProduct", data)
+      .post("https://shop-mart-server.onrender.com/addToCartProduct", data)
       .then((res) => {
         if (res.data.insertedId) {
           swal(
@@ -64,7 +64,7 @@ const Order = () => {
         <h3 className="text-light pt-5">ORDER NOW</h3>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
-          disabled
+            disabled
             placeholder="name"
             style={{
               color: "white",
@@ -86,7 +86,7 @@ const Order = () => {
           <br />
           {/* title */}
           <input
-          disabled
+            disabled
             placeholder="title"
             style={{
               color: "white",
@@ -98,7 +98,7 @@ const Order = () => {
           <br />
           {/* description */}
           <input
-          disabled
+            disabled
             placeholder="Description"
             style={{
               color: "white",
@@ -108,7 +108,7 @@ const Order = () => {
             {...register("detailS", { required: true })}
           />{" "}
           <input
-          disabled
+            disabled
             placeholder="Price"
             style={{
               color: "white",

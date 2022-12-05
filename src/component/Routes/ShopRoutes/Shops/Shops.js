@@ -5,7 +5,7 @@ import Shop from "../Shop/Shop";
 const Shops = () => {
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
-    fetch("https://mighty-reef-87460.herokuapp.com/allproducts")
+    fetch("https://shop-mart-server.onrender.com/allproducts")
       .then((res) => res.json())
       .then((data) => setAllProducts(data));
   }, []);

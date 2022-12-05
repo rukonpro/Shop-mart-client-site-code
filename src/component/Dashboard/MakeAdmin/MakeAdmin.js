@@ -8,7 +8,7 @@ const MakeAdmin = () => {
   };
   const handleAdminSubmit = (e) => {
     const user = { email };
-    fetch("https://mighty-reef-87460.herokuapp.com/users/admin", {
+    fetch("https://shop-mart-server.onrender.com/users/admin", {
       method: "put",
       headers: {
         "content-type": "application/json",

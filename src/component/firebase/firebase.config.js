@@ -1,9 +1,15 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyBPGlXyCZIZXZ9tmL8cT3ojOeHuEGvIOwc",
-  authDomain: "shop-mart-f89cb.firebaseapp.com",
-  projectId: "shop-mart-f89cb",
-  storageBucket: "shop-mart-f89cb.appspot.com",
-  messagingSenderId: "377199829605",
-  appId: "1:377199829605:web:d407dc7a16a3263aa45c8c",
+  apiKey: "AIzaSyCjuCVoeF5BTK9hdL73uqyQ2P5VzDRpCJ8",
+
+  authDomain: "shop-mart-80ef1.firebaseapp.com",
+
+  projectId: "shop-mart-80ef1",
+
+  storageBucket: "shop-mart-80ef1.appspot.com",
+
+  messagingSenderId: "586404556227",
+
+  appId: "1:586404556227:web:219f8ab90c25b410122176"
+
 };
 export default firebaseConfig;

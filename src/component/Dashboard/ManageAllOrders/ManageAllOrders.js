@@ -19,7 +19,7 @@ const ManageAllOrders = () => {
   const [products, setProducts] = useState([]);
   const [open, setOpen] = React.useState(false);
   useEffect(() => {
-    fetch("https://mighty-reef-87460.herokuapp.com/allOrder")
+    fetch("https://shop-mart-server.onrender.com/allOrder")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
@@ -27,10 +27,10 @@ const ManageAllOrders = () => {
   // delete order Products ==================================
   const handleDelete = (id) => {
     window.confirm("Are you sure you wish to delete this item?") &&
-      axios.delete(`https://mighty-reef-87460.herokuapp.com/manageAllOrderDelete/${id}`).then(
+      axios.delete(`https://shop-mart-server.onrender.com/manageAllOrderDelete/${id}`).then(
         (res) =>
           res.data.deletedCount &&
-          fetch("https://mighty-reef-87460.herokuapp.com/allOrder")
+          fetch("https://shop-mart-server.onrender.com/allOrder")
             .then((res) => res.json())
             .then((data) => setProducts(data))
       );
@@ -49,7 +49,7 @@ const ManageAllOrders = () => {
   const handleSetStatus = (status, statusId) => {
     const newData = { status };
     newData.statusColor = "rgb(34, 253, 0)";
-    fetch(`https://mighty-reef-87460.herokuapp.com/statusUpdate/${statusId}`, {
+    fetch(`https://shop-mart-server.onrender.com/statusUpdate/${statusId}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -59,7 +59,7 @@ const ManageAllOrders = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {
-          fetch("https://mighty-reef-87460.herokuapp.com/allOrder")
+          fetch("https://shop-mart-server.onrender.com/allOrder")
             .then((res) => res.json())
             .then((data) => setProducts(data));
         }

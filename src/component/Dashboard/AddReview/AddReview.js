@@ -52,7 +52,7 @@ const AddReview = () => {
       reviewData.img = user.photoURL;
       reviewData.rating = ratingValue;
 
-      fetch('https://mighty-reef-87460.herokuapp.com/review', {
+      fetch('https://shop-mart-server.onrender.com/review', {
          method: "POST",
          headers: {
 

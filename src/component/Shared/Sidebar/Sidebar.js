@@ -28,7 +28,7 @@ const Sidebar = () => {
                     <small>Photographer & Blogger</small>
                     <p>It is a long established fact that a reader will be distracted</p>
                     <div className="sidebar-banner-sign">
-                        <img src="https://lusion.arrowtheme.com/wp-content/uploads/2020/09/logo-sidebar.png"/>
+                        <img src="https://lusion.arrowtheme.com/wp-content/uploads/2020/09/logo-sidebar.png" alt=''/>
                     </div>
                 </div>
             </div>

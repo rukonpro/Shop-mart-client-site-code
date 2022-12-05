@@ -117,7 +117,7 @@ const useFirebase = () => {
   const saveUsers = (email, displayName, method) => {
     const user = { email, displayName }
 
-    fetch('https://mighty-reef-87460.herokuapp.com/users', {
+    fetch('https://shop-mart-server.onrender.com/users', {
       method: method,
       headers: {
         'content-type': 'application/json'
@@ -149,7 +149,7 @@ const useFirebase = () => {
   // get admin ============================
   useEffect(() => {
 
-    fetch(`https://mighty-reef-87460.herokuapp.com/users/${user.email}`)
+    fetch(`https://shop-mart-server.onrender.com/users/${user.email}`)
 
       .then(res => res.json())
       .then(data => {

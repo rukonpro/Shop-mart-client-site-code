@@ -9,7 +9,7 @@ const ProductDetails = () => {
   const [productDetail, setProductDetail] = useState({});
 
   useEffect(() => {
-    fetch(`https://mighty-reef-87460.herokuapp.com/homeProducts/${id}`)
+    fetch(`https://shop-mart-server.onrender.com/homeProducts/${id}`)
       .then((res) => res.json())
       .then((data) => setProductDetail(data));
   }, [id]);
@@ -34,13 +34,13 @@ const ProductDetails = () => {
           <span>No reviews</span>
           <hr />
           <p>{productDetail.detailS}</p>
-      
+
           <Link to={`/order/${productDetail._id}`}>
-           
+
             <button className="btn3 mt-5">BUY IT NOW</button>
           </Link>
           <br />
-         
+
         </div>
         {/* col-3 */}
         <div className="col-lg-3 col-sm-12 col-xs-12">

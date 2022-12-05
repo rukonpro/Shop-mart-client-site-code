@@ -4,7 +4,7 @@ import './AddProduct.css';
 const AddProduct = () => {
    const { register, handleSubmit, reset } = useForm();
    const onSubmit = data => {
-      fetch('https://mighty-reef-87460.herokuapp.com/addToProduct', {
+      fetch('https://shop-mart-server.onrender.com/addToProduct', {
          method: "POST",
          headers: {
             "content-type": "application/json"
